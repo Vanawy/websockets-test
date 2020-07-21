@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чатик</title>
+    <script src="client.js" defer></script>
+</head>
+
+<body>
+    <div id="chat">
+        <textarea id="messages" cols="30" rows="10" readonly></textarea>
+        <div>
+            <div id="join-box" class="inputs">
+                <input type="text" class="text" placeholder="Your name" id="name">
+                <input type="button" value="Join" class="btn" id="join-btn">
+            </div>
+            <div id="message-box" class="inputs" style="display: none;">
+                <input type="text" class="text" placeholder="Message text" id="message">
+                <input type="button" value="Send" class="btn" id="send-btn">
+            </div>
+            <div class="users"><span id="users">0</span>👽</div>
+        </div>
+    </div>
+    </div>
+    <style>
+        #chat {
+            width: 50%;
+            margin: auto;
+        }
+        
+        #messages {
+            width: 100%;
+        }
+        
+        .inputs {
+            width: 100%;
+            display: flex;
+        }
+        
+        .text {
+            flex: 9;
+        }
+        
+        .btn {
+            flex: 2;
+        }
+    </style>
+</body>
+
+</html>

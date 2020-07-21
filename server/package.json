@@ -1,0 +1,17 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc --outDir dist index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/websocket": "^1.0.1",
+        "dotenv": "^8.2.0",
+        "websocket": "^1.0.31"
+    }
+}
